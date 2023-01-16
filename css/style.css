@@ -1,0 +1,20 @@
+body{
+    background-color: white;
+
+}
+
+
+
+.hola{
+    color: cyan;
+   text-align: center;
+}
+.nombre{
+
+}
+
+nav{
+    padding: 40px;
+    margin-bottom: 3em;
+    flex: auto;
+}
