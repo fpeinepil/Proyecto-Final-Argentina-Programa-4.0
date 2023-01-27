@@ -1,18 +1,8 @@
-body{
-    background-color: white;
-
-}
-
-
-
-.hola{
-    color: cyan;
-   text-align: center;
-}
-
-
-nav{
-    padding: 40px;
-    margin-bottom: 3em;
-    flex: auto;
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    
 }
