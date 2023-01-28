@@ -8,12 +8,6 @@ body{
     padding: 90px 20px 0;
 }
 
-.presentacion img{
-    height: 80%;
-    width: 100%;
-    opacity: 50%;
-}
-
 .header{
     background-color: #0769e9;
     height: 80px;
@@ -32,12 +26,7 @@ body{
 .nav-link{
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 3px;
-}
-.nav-link:hover{
-    background-color: #034574;
-    transition: 0.5s;/*transicion al mover el cursor entre links*/
+ 
 }
 
 #logo{
@@ -70,6 +59,19 @@ body{
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;/*max-content es para que no corte el contenido al tener pantallas mas chicas*/
+
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link-active{
+    background-color: #034574;
+
+    transition: 0.5s;/*transicion al mover el cursor entre links*/
 }
 
 .nav-barra{
@@ -79,6 +81,7 @@ body{
     font-size: 30px;
     padding: 0 20px;
     line-height: 60px;
+    cursor: pointer;
     display: none;
 }
 
@@ -99,11 +102,7 @@ body{
         padding: 8px 12px;
         border-radius: 3px;
     }
-    .nav-link:hover{
-        background: none;
-        color: #83c5f7;
-    }
-    
+
     #logo{
         font-size: 25x;
         padding: 0 20px;
@@ -130,19 +129,30 @@ body{
         width: 100%;
         padding: 20px 0;
 
+
+        height: calc( 100% - 50%);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
     }
     
     .nav-menu-item{
         line-height: 70px;
     }
+
+    .nav-menu-link:hover,
+    .nav-menu-link-active{
+        background: none;
+        color: #83c5f7;
+    }
     
     .nav-barra{
-        color: white;
-        background: none;
-        border: none;
-        font-size: 30px;
-        padding: 0 20px;
-        line-height: 60px;
-        display: none;
+
+        display: block;
+    }
+
+    .nav-menu-visible{
+        left: 0;
     }
 }
