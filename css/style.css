@@ -1,15 +1,17 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;    
 }
 
-body{
-    font-family: sans-serif;
-    padding: 90px 20px 0;
+html{
+    scroll-behavior: smooth;
 }
 
+/*Barra de Navegacion*/
+
 .header{
-    background-color: #0769e9;
+    background-color: #1e2326;
     height: 80px;
     position: fixed; /* funciona para que la barra no se pierda al hacer scroll y quede fija*/
     width: 100%;
@@ -44,7 +46,7 @@ body{
     line-height: 80px;
     text-decoration: none;
     font-family: sans-serif;
-    color: white;
+    color: #F65735;
 }
 
 .nav-menu{
@@ -69,7 +71,7 @@ body{
 
 .nav-menu-link:hover,
 .nav-menu-link-active{
-    background-color: #034574;
+    background-color: #F65735;
 
     transition: 0.5s;/*transicion al mover el cursor entre links*/
 }
@@ -85,7 +87,7 @@ body{
     display: none;
 }
 
-
+/*Adaptacion movil*/
 
 @media(max-width: 768px) {
     body{
@@ -155,4 +157,62 @@ body{
     .nav-menu-visible{
         left: 0;
     }
+}
+
+
+/*inicio*/
+.inicio{
+    background: linear-gradient(to top,rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(/img/presentacion1.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.inicio .contenido-presentacion{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    
+}
+
+.inicio .contenido-presentacion img{
+    margin-top: 40px;
+    border: 10px solid #F65735;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-presentacion h1{
+    margin-top: 40px;
+    font-size: 43px;
+    font-family: 'Righteus';
+
+}
+.inicio .contenido-presentacion h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-presentacion .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff ;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-presentacion .redes a:hover{
+    background-color: #F65735;
 }
