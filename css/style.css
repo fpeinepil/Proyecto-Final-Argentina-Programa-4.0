@@ -31,16 +31,21 @@ html{
  
 }
 
-#logo{
+i{
+    display: flex;
+
+}
+
+.logo{
     font-size: 30px;
     font-weight: bold;
-    padding: 0 40px;
+    padding: 0 10px;
     line-height: 80px;
     color: white;
 }
 
 .titulo-logo{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     padding: 0 20px;
     line-height: 80px;
@@ -178,6 +183,7 @@ html{
     margin: auto;
     text-align: center;
     border-radius: 40px;
+ 
     
 }
 
@@ -195,10 +201,6 @@ html{
     font-size: 43px;
     font-family: 'Righteus';
 
-}
-.inicio .contenido-presentacion h2{
-    font-size: 15px;
-    font-weight: normal;
 }
 .inicio .contenido-presentacion .redes a{
     color: #fff;
