@@ -37,11 +37,7 @@ i{
 }
 
 .logo{
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 10px;
-    line-height: 80px;
-    color: white;
+    padding: 5px 10px;
 }
 
 .titulo-logo{
@@ -51,7 +47,7 @@ i{
     line-height: 80px;
     text-decoration: none;
     font-family: sans-serif;
-    color: #F65735;
+    color: #d64933;
 }
 
 .nav-menu{
@@ -76,7 +72,7 @@ i{
 
 .nav-menu-link:hover,
 .nav-menu-link-active{
-    background-color: #F65735;
+    background-color: #d64933;
 
     transition: 0.5s;/*transicion al mover el cursor entre links*/
 }
@@ -96,12 +92,13 @@ i{
 
 @media(max-width: 768px) {
     body{
-        padding-top: 70px;
+        padding-top: 60px;
     }
     
     .header{
         height: 60px;
     }
+   
 
     .nav-link{
         color: white;
@@ -110,10 +107,12 @@ i{
         border-radius: 3px;
     }
 
-    #logo{
+    .header .nav .logo{
+        width: 30px;
+        height: 30px;
         font-size: 25x;
-        padding: 0 20px;
-        line-height: 60px;
+        padding: 0 10px;
+        line-height: 30px;
     }
     
     .titulo-logo{
@@ -189,7 +188,7 @@ i{
 
 .inicio .contenido-presentacion img{
     margin-top: 40px;
-    border: 10px solid #F65735;
+    border: 10px solid #d64933;
     display: block;
     width: 80%;
     margin: auto;
@@ -249,4 +248,46 @@ i{
 }
 .inicio .contenido-presentacion .redes a:hover{
     background-color: #F65735;
+}
+
+/*Sobre mi*/
+
+.sobremi{
+    background: #6ea4bf;
+    height: 100vh;
+    display: flex;
+
+}
+
+.sobremi .titulo-texto p{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    padding:50px 0 50px 230px;
+    display: flex;
+
+}
+.sobremi .titulo-texto p .icon-texto{
+    padding:10px;
+}
+.sobremi .text{
+    margin: 14em 8em 0 auto;
+}
+.sobremi .text h3{
+    padding: 20px ;
+    background-color: white;
+    border-radius: 40px;
+    max-width: 700px;
+    align-items: center;
+    -webkit-box-shadow: 5px 2px 22px 0px rgba(0,0,0,0.46); 
+    box-shadow: 5px 2px 22px 0px rgba(0,0,0,0.46);
+}
+
+.sobremi .imgpresentacion img{
+    padding: 30%;
+}
+
+.portafolio{
+    background: #f1dac4;
+    height: 100vh;
+    display: flex;
 }
